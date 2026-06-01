@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Toppers Academy – First Premium CS Academy in the Area</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -736,4 +735,222 @@
       background: var(--navy-card);
       border: 1px solid var(--navy-border);
       border-radius: var(--radius-lg);
-      padding: 28px
+      padding: 28px;
+      position: relative;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+      .hero-subtitle { margin: 0 auto 32px; }
+      .hero-cta-group { justify-content: center; }
+      .hero-stats { justify-content: center; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow-blob glow-blob-1"></div>
+  <div class="glow-blob glow-blob-2"></div>
+
+  <a href="https://wa.me/923000000000" class="fab-whatsapp" target="_blank" aria-label="Contact on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.498 1.451 5.438 1.452 5.518 0 10.007-4.486 10.01-10.004.002-2.673-1.037-5.184-2.927-7.076C17.228 1.631 14.72 .592 12.043.592 6.521.592 2.03 5.078 2.028 10.597c-.001 1.969.512 3.894 1.488 5.607L2.507 21.87l5.736-1.504z"/>
+    </svg>
+  </a>
+
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">T</div>
+        <div>
+          <div class="logo-text-main">TOPPERS ACADEMY</div>
+          <div class="logo-text-sub">FUTURE CHANGER</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#features">Why Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <a href="#hero">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#features">Why Us</a>
+        <a href="#testimonials">Reviews</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge"> Rahim Yar Khan's First Choice</div>
+        <span class="hero-urdu-title urdu">اپنی اکیڈمی کا مستقبل روشن کریں</span>
+        <h1 class="hero-title">Learn <span class="highlight-cyan">Computer Science</span> Professionally</h1>
+        <p class="hero-subtitle">Toppers Academy brings world-class modern tech courses to your area. Learn programming, web design, and digital tech from core basics to advanced levels.</p>
+        <div class="hero-cta-group">
+          <a href="#courses" class="btn btn-primary">Explore Courses</a>
+          <a href="https://wa.me/923000000000" target="_blank" class="btn btn-yellow">Join Now</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Students</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Tech Courses</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="laptop-wrap">
+          <div class="orbit-ring orbit-ring-1"><div class="orbit-dot" style="top:10%; left:10%;"></div></div>
+          <div class="orbit-ring orbit-ring-2"><div class="orbit-dot" style="bottom:20%; right:15%;"></div></div>
+          <svg class="laptop-svg" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="60" y="20" width="380" height="230" rx="12" fill="#0b1b3d" stroke="#00d4ff" stroke-width="4"/>
+            <rect x="75" y="35" width="350" height="200" rx="6" fill="#040b19"/>
+            <rect x="20" y="250" width="460" height="16" rx="8" fill="#1b2e5a"/>
+            <rect x="200" y="250" width="100" height="6" fill="#00d4ff" opacity="0.7"/>
+            <circle cx="250" cy="28" r="3" fill="#00d4ff"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="info-bar">
+    <div class="container">
+      <div class="info-item">
+        <div class="icon-circle cyan">✓</div> Regular Classes
+      </div>
+      <div class="info-item">
+        <div class="icon-circle yellow">★</div> Professional Faculty
+      </div>
+      <div class="info-item">
+        <div class="icon-circle cyan">⚙</div> Practical Labs
+      </div>
+    </div>
+  </div>
+
+  <section id="courses" class="section container">
+    <div class="section-header">
+      <span class="section-label">Our Programs</span>
+      <h2 class="section-title">Become a Tech <span class="highlight-cyan">Expert</span></h2>
+      <p>Choose from our specialized programs crafted according to the current IT market demands.</p>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="card-accent accent-cyan"></div>
+        <div class="course-icon icon-bg-cyan">🌐</div>
+        <h3 class="course-title">Web Development</h3>
+        <p class="course-desc">Master HTML, CSS, JavaScript, and modern tools to build dynamic web applications from scratch.</p>
+        <div class="course-tags">
+          <span class="pill pill-cyan">Frontend</span>
+          <span class="pill pill-cyan">Fullstack</span>
+        </div>
+        <span class="course-link">Read details &rarr;</span>
+      </div>
+      <div class="course-card">
+        <div class="card-accent accent-yellow"></div>
+        <div class="course-icon icon-bg-yellow">🐍</div>
+        <h3 class="course-title">Python Programming</h3>
+        <p class="course-desc">Start your programming journey with Python. Perfect for logic building, automation, and basics of AI.</p>
+        <div class="course-tags">
+          <span class="pill pill-yellow">Coding</span>
+          <span class="pill pill-yellow">Data</span>
+        </div>
+        <span class="course-link">Read details &rarr;</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+        <span class="section-label">Why Choose Toppers</span>
+        <h2 class="section-title">We Deliver <span class="highlight-yellow">Excellence</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🎓</span>
+          <h3 class="feature-title">Expert Mentors</h3>
+          <p class="feature-desc">Learn from top-tier professionals with years of industry experience.</p>
+          <span class="feature-urdu urdu">ماہر اساتذہ کی رہنمائی</span>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">💻</span>
+          <h3 class="feature-title">100% Practical</h3>
+          <p class="feature-desc">No boring theory. We focus purely on hands-on project building.</p>
+          <span class="feature-urdu urdu">مکمل پریکٹیکل ٹریننگ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Success Stories</span>
+        <h2 class="section-title">What Our Students <span class="highlight-cyan">Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p style="color: var(--muted); font-style: italic; margin-bottom: 16px;">"Toppers Academy completely changed my perspective on coding. The instructors explain complex concepts in extremely easy ways!"</p>
+          <h4 style="color: var(--white); font-weight: 700;">Zain Ahmed</h4>
+          <span style="font-size: 0.8rem; color: var(--cyan);">Web Design Student</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: var(--navy); border-top: 1px solid var(--navy-border); padding: 40px 0; text-align: center;">
+    <div class="container">
+      <p style="color: var(--muted); font-size: 0.9rem;">&copy; 2026 Toppers Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky Navbar on Scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileNav.classList.toggle('open');
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileLinks = mobileNav.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileNav.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
